@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: "BebasKai";
+    src: url("/fonts/BebasKai/BebasKai.otf");
+}
+
+html, body, main{
+    position:relative;
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+
+:root{
+    --brutal-blue:#38dbff;
+    --brutal-orange:#ffb443;
+    --brutal-red:#ff5d5d;
+    --brutal-orange-red:#f65a4d;
+
+    --brutal-yellow:#fff503;
+    --brutal-green:#00ff75;
+    --brutal-purple:#dd7dff;
+    --brutal-pink:#defefe;
+    --brutal-beige:#FFDCA8;
+    --brutal-medium-blue:#1011db;
+
+    --lime-green:#4edc10;
+    --bitter-lemon:#b9d915;
+}
