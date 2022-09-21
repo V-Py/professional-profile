@@ -6,16 +6,16 @@
     let position = 0;
     let categories = [{
         label:'Front End', 
-        skills:[{label:"css"}, {label:"html"}, {label:"javascript"}, {label:"tailwind"}, {label:"Svelte"}, {label:"bootstrap"}, {label:"sass"}, {label:"todo"}], 
+        skills:[{label:"css"}, {label:"html"}, {label:"javascript"}, {label:"typescript"},{label:"tailwindcss"}, {label:"Svelte"}, {label:"bootstrap"}, {label:"sass"}, {label:"vitest"}], 
         bgcolor:"blue"
     }, {
         label:'Back End', 
-        skills:[{label:"php"}, {label:"node.js"}, {label:"javascript"}, {label:"svelte kit"}, {label:"sql"}, {label:"phpmyadmin"}, {label:"dolibarr"}, {label:"todo"}], 
+        skills:[{label:"php"}, {label:"node.js"}, {label:"supabase"}, {label:"svelte kit"}, {label:"sql"}, {label:"phpmyadmin"}, {label:"dolibarr"}, {label:"mongodb"}, {label:"OAUth"},{label:"SOAP"}], 
         bgcolor:"purple"
     }, {
         label:'DevOps', 
-        skills:[{label:"github"}, {label:"bitbucket"}, {label:"jira"}, {label:"sync"}, {label:"Notion"}], 
-        bgcolor:"yellow"
+        skills:[{label:"github"}, {label:"bitbucket"}, {label:"jira"}, {label:"Azure"}, {label:"OVH"}, {label:"CRON"}, {label:"SMTP"}, {label:"Notion"}], 
+        bgcolor:"orange-red"
     }]
 
 

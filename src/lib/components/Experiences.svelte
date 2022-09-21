@@ -1,9 +1,10 @@
 <script lang="ts">
+    import Experience from '$lib/components/Experience.svelte';
 
 </script>
 
 <div class="container">
-    Experiences (carousel)
+    <Experience />
 </div>
 
 <style>

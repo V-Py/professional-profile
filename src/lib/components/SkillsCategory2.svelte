@@ -5,10 +5,10 @@
     import {elasticInOut} from 'svelte/easing';
 
     let positions_cards = [0, 1, 2];
+    let colors = ["green", "blue", "red", "yellow", "orange", "beige", "lime-green"];
 
     const dispatch = createEventDispatcher();
     export let categories = [];
-    export let skills = [{label:"css"}, {label:"html"}, {label:"javascript"}, {label:"css"}, {label:"html"}, {label:"javascript"}, {label:"css"}, {label:"html"}, {label:"javascript"}, {label:"css"}, {label:"html"}, {label:"javascript"}];
     let bool_animate = false;
 
     function animate(){
@@ -52,7 +52,7 @@
                     </div>
                     <div class="skills-container">
                         {#each category.skills as skill} 
-                            <div class="badge">{skill.label}</div>
+                            <div class="badge {colors[Math.round(Math.random()*(5))]}">{skill.label}</div>
                         {/each}
                     </div>
                     <div class="arrow">
@@ -224,10 +224,6 @@
         background:lightgreen;
         flex:1;
     }
-
-    .pink{
-        background-color:var(--brutal-pink);
-    }
     
     .blue{
         background-color:var(--brutal-blue);
@@ -239,6 +235,26 @@
 
     .yellow{
         background-color:var(--brutal-yellow);
+    }
+
+    .orange{
+        background-color: var(--brutal-orange);
+    }
+
+    .red{
+        background-color: var(--brutal-red);
+    }
+
+    .lime-green{
+        background-color: var(--lime-green);
+    }
+
+    .beige{
+        background-color: var(--brutal-beige);
+    }
+
+    .orange-red{
+        background-color: var(--brutal-orange-red);
     }
 
 

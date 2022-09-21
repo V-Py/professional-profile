@@ -11,6 +11,7 @@
 
 
     .container{
+        background:#0077fe;
         display:flex;
         justify-content:center;
         align-items:center;
