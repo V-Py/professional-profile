@@ -12,12 +12,23 @@
     let bool_animate = false;
 
     function animate(){
-        // alert('animate');
+        const button = this;
+        button.disabled = true;
         bool_animate = !bool_animate;
 
         setTimeout(function(){
-            positions_cards = [1, 2, 0]
-        }, 5000);
+            bool_animate = false;
+
+            if(positions_cards.indexOf(1) == 1) {
+                positions_cards = [1, 2, 0]
+            }else if(positions_cards.indexOf(1) == 0) {
+                positions_cards = [2, 0, 1]
+            }else if(positions_cards.indexOf(1) == 2){
+                positions_cards = [0, 1, 2]
+            }
+
+            button.disabled = false;
+        }, 1000);
     }
 </script>
 
@@ -27,7 +38,7 @@
     <div class="inner">
 
         {#each categories as category, index}
-            <div class="card" class:secondposition={positions_cards.indexOf(index) == 2} class:firstposition={positions_cards.indexOf(index) == 1} class:bg={index != 0} class:animate={bool_animate}>
+            <div class="card" class:secondposition={positions_cards.indexOf(index) == 2} class:firstposition={positions_cards.indexOf(index) == 1} class:bg={positions_cards.indexOf(index) != 0} class:animate={bool_animate}>
                 <div class="title {category.bgcolor}">
                     <span class="text">{category.label}</span>
                     <!-- <span class="number">{logo}</span> -->
@@ -40,7 +51,7 @@
                         </button> -->
                     </div>
                     <div class="skills-container">
-                        {#each skills as skill} 
+                        {#each category.skills as skill} 
                             <div class="badge">{skill.label}</div>
                         {/each}
                     </div>
